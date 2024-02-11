@@ -18,6 +18,9 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 EXTRA_UDFPS_ICONS := true
 
+# Gapps
+TARGET_USES_MINI_GAPPS := true
+
 PRODUCT_NAME := derp_cupidr
 PRODUCT_DEVICE := cupidr
 PRODUCT_MANUFACTURER := realme
