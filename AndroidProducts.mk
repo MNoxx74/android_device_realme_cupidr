@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The genesisOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_cupidr.mk
+    $(LOCAL_DIR)/genesis_cupidr.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_cupidr-user \
-    lineage_cupidr-userdebug \
-    lineage_cupidr-eng
+    genesis_cupidr-user \
+    genesis_cupidr-userdebug \
+    genesis_cupidr-eng
