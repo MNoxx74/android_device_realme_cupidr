@@ -3,6 +3,7 @@
 # Copyright (C) 2021-2022 DerpFest
 #
 # SPDX-License-Identifier: Apache-2.0
+
 #
 
 # Inherit from those products. Most specific first.
@@ -14,6 +15,8 @@ $(call inherit-product, device/realme/cupidr/device.mk)
 
 # Inherit some common DerpFest stuff.
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
+
+EXTRA_UDFPS_ICONS := true
 
 PRODUCT_NAME := derp_cupidr
 PRODUCT_DEVICE := cupidr
