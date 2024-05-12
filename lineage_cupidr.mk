@@ -14,6 +14,13 @@ $(call inherit-product, device/realme/cupidr/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_CORE_GMS_EXTRAS := true
+TARGET_ENABLE_BLUR := true
+TARGET_HAS_UDFPS := true
+RISING_MAINTAINER="MNoxx74"
+
 PRODUCT_NAME := lineage_cupidr
 PRODUCT_DEVICE := cupidr
 PRODUCT_MANUFACTURER := realme
@@ -28,14 +35,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-oppo
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="RMX2202-user 13 TP1A.220905.001 R.13639a6-a-2bdaa release-keys" \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
-    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
+    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME) \
+    RISING_CHIPSET="Snapdragon 888" \
+    RISING_MAINTAINER="MNoxx74"
 
 BUILD_FINGERPRINT := realme/RMX2202/RMX2202L1:13/TP1A.220905.001/R.13639a6-a-2bdaa:user/release-keys
-
-# Matrixx
-MATRIXX_BUILD_TYPE := Official
-MATRIXX_MAINTAINER := MNoxx74
-MATRIXX_CHIPSET := SM8350
-MATRIXX_BATTERY := 4500mAh
-MATRIXX_DISPLAY := 1080x2400
-WITH_GMS := true
